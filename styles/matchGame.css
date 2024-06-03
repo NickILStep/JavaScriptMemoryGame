@@ -1,0 +1,83 @@
+/* Color for hover: wheat */
+
+html {
+    background-color: rgb(24, 112, 24);
+    color: white;
+    text-align: center;
+}
+
+div#startForm {
+    font-style: italic;
+}
+
+table#gameTable {
+    display: inline-block;
+    width: 20em;
+    height: 32em;
+    text-align: center;
+    padding: 0px;
+    border-collapse: separate;
+    border-spacing: .5em;
+}
+
+tbody {
+    height: 100%;
+}
+
+tr.cardRow {
+    height: 25%;
+}
+
+tr.cardRow, tbody {
+    display: table;
+    width: 100%;
+}
+
+td {
+    width: 25%;
+    height: 100%;
+    user-select: none;
+}
+
+td:not(.emptySpace) {
+    border: 2px solid black;
+    border-radius: .5em;
+}
+
+td.faceUpCard {
+    background-color: white;
+    color: gray;
+}
+
+td.faceDownCard {
+    background-color: blueviolet;
+    color: blueviolet;
+}
+
+td.faceDownCard:hover {
+    background-color: rgb(107, 21, 187);
+    color:rgb(107, 21, 187);
+}
+
+td.disabled {
+    pointer-events: none;
+    background-color: rgb(117, 80, 151);
+    color:rgb(117, 80, 151);
+}
+
+td.emptySpace {
+    /* For hiding the numbers when a match is made */
+    /* font-size: 0; */
+}
+
+input#numSymbols {
+    width: 3em;
+}
+
+.hidden {
+    display: none;
+}
+
+.unhidden {
+    display: inline-block;
+}
